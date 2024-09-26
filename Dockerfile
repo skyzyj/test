@@ -7,3 +7,4 @@ FROM container-registry.oracle.com/os/oraclelinux:8-slim
 EXPOSE 8080
 COPY --from=builder /build/target/spring-boot3-native-demo app
 ENTRYPOINT ["/app"]
+#aliyun ./mvnw --no-transfer-progress native:compile -Pnative failed
